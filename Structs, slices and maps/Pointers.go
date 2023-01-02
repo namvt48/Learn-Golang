@@ -6,14 +6,25 @@ func plus(num *int) {
 	*num++
 }
 
+type O func(a, b int) int
+
+type B int
+
 func main() {
-	i := 42
+	// i := 42
 
-	p := &i
+	// p := &i
 
-	fmt.Println("Before : ", *p)
+	// b := new(int)
+	// *b = 41
 
-	plus(p)
+	// a := 10
+	// fmt.Println("Before : ", a)
 
-	fmt.Println("After: ", *p)
+	// plus(&a)
+
+	// fmt.Println("After: ", a)
+	var b B
+	b = 10
+	fmt.Println(b)
 }
